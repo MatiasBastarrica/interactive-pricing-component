@@ -64,6 +64,34 @@ body {
   font-family: var(--ff-manrope);
   font-weight: var(--fw-600);
   background-color: var(--very-pale-blue);
+  color: var(--grayish-blue);
+  padding-block: 3.5rem;
+}
+
+/* ### INTERACTIVE PRICING COMPONENT ### */
+
+.intro-section {
+  text-align: center;
+  padding-block: 2rem;
+  background-image: url(./images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title {
+  color: var(--dark-desaturated-blue);
+  font-size: 1.3rem;
+}
+
+.subtitle {
+  margin-top: 0.8rem;
+  font-size: 0.985rem;
+  max-width: 22ch;
+  margin-inline: auto;
+}
+
+.price {
+  color: var(--dark-desaturated-blue);
 }
 
 /* ### SLIDER ### */
