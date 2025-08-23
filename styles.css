@@ -57,3 +57,11 @@ button {
   font: inherit;
   background: unset;
 }
+
+/* ### GENERAL SYLING ### */
+
+body {
+  font-family: var(--ff-manrope);
+  font-weight: var(--fw-600);
+  background-color: var(--very-pale-blue);
+}
