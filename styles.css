@@ -24,4 +24,9 @@
   --grayish-blue: hsl(225, 20%, 60%);
   /* text and cta bg */
   --dark-desaturated-blue: hsl(227, 35%, 25%);
+
+  /* # TYPOGRAPHY # */
+  --ff-manrope: "Manrope", sans-serif;
+  --fw-600: 600;
+  --fw-800: 800;
 }
