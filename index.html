@@ -21,9 +21,53 @@
     <title>Frontend Mentor | Interactive pricing component</title>
   </head>
   <body>
-    Simple, traffic-based pricing Sign-up for our 30-day trial. No credit card
-    required. Pageviews $ /month Monthly Billing Yearly Billing 25% discount
-    Unlimited websites 100% data ownership Email reports Start my trial
+    <main>
+      <h1 class="title">Simple, traffic-based pricing</h1>
+      <p class="subtitle">
+        Sign-up for our 30-day trial. No credit card required.
+      </p>
+      <form action="#" method="post">
+        <div class="slider-container">
+          <div class="pageviews">100K Pageviews</div>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="slider"
+            id="myRange"
+            step="20"
+          />
+          <div><span class="price"></span>/ month</div>
+        </div>
+        <div class="toggle-switch-container">
+          <span>Monthly Billing</span>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <span>Yearly Billing <span class="discount">-25%</span></span>
+        </div>
+        <ul>
+          <li>
+            <span class="check-icon"
+              ><img src="./images/icon-check.svg" alt="" /></span
+            ><span>Unlimited websites</span>
+          </li>
+          <li>
+            <span class="check-icon"
+              ><img src="./images/icon-check.svg" alt="" /></span
+            ><span>100% data ownership</span>
+          </li>
+          <li>
+            <span class="check-icon"
+              ><img src="./images/icon-check.svg" alt="" /></span
+            ><span>Email reports</span>
+          </li>
+        </ul>
+        <button>Start my trial</button>
+      </form>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
