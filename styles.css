@@ -355,6 +355,10 @@ input:checked + .slider-switch:before {
     align-content: center;
   }
 
+  body::before {
+    height: 540px;
+  }
+
   .intro-section {
     padding-block: 2.5rem;
   }
