@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My Solution](https://your-solution-url.com)
+- Solution URL: [My Solution](https://www.frontendmentor.io/solutions/interactive-pricing-component-mb-btqrFgt7ko)
 - Live Site URL: [Live](https://matiasbastarrica.github.io/interactive-pricing-component/)
 
 ## My process
