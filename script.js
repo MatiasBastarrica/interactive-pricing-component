@@ -13,23 +13,23 @@ function switchBillingInfo() {
     switch (slider.value) {
       case "0":
         pageview.textContent = "10K";
-        price.textContent = "$8";
+        price.textContent = "$8.00";
         break;
       case "25":
         pageview.textContent = "50K";
-        price.textContent = "$12";
+        price.textContent = "$12.00";
         break;
       case "50":
         pageview.textContent = "100K";
-        price.textContent = "$16";
+        price.textContent = "$16.00";
         break;
       case "75":
         pageview.textContent = "500K";
-        price.textContent = "$24";
+        price.textContent = "$24.00";
         break;
       case "100":
         pageview.textContent = "1M";
-        price.textContent = "$36";
+        price.textContent = "$36.00";
         break;
 
       default:
@@ -39,23 +39,23 @@ function switchBillingInfo() {
     switch (slider.value) {
       case "0":
         pageview.textContent = "10K";
-        price.textContent = "$6";
+        price.textContent = "$6.00";
         break;
       case "25":
         pageview.textContent = "50K";
-        price.textContent = "$9";
+        price.textContent = "$9.00";
         break;
       case "50":
         pageview.textContent = "100K";
-        price.textContent = "$12";
+        price.textContent = "$12.00";
         break;
       case "75":
         pageview.textContent = "500K";
-        price.textContent = "$18";
+        price.textContent = "$18.00";
         break;
       case "100":
         pageview.textContent = "1M";
-        price.textContent = "$27";
+        price.textContent = "$27.00";
         break;
 
       default:
