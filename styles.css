@@ -64,8 +64,24 @@ body {
   font-family: var(--ff-manrope);
   font-weight: var(--fw-600);
   background-color: var(--very-pale-blue);
+  /* background-color: deeppink; */
   color: var(--grayish-blue);
-  padding-block: 3.5rem;
+  padding: 3.5rem 1.5rem;
+  position: relative;
+  z-index: 0;
+}
+
+body::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f1f5fe;
+  height: 420px;
+  width: 100%;
+  z-index: -1;
+  border-end-start-radius: 12rem;
 }
 
 /* ### INTERACTIVE PRICING COMPONENT ### */
@@ -81,6 +97,7 @@ body {
 .title {
   color: var(--dark-desaturated-blue);
   font-size: 1.3rem;
+  font-weight: var(--fw-800);
 }
 
 .subtitle {
@@ -90,8 +107,103 @@ body {
   margin-inline: auto;
 }
 
+form {
+  border-radius: 0.6rem;
+  margin-top: 1.5rem;
+  background-color: var(--white);
+  padding: 3rem 1.5rem;
+  text-align: center;
+  box-shadow: 0px 10px 18px rgba(202, 202, 202, 0.383);
+}
+
+.slider-container {
+  display: grid;
+  gap: 2.6rem;
+  grid-template-areas: "pageviews" "input" "price";
+}
+
+.pageviews-container {
+  grid-area: pageviews;
+  text-transform: uppercase;
+  font-weight: var(--fw-800);
+  letter-spacing: 2px;
+  font-size: 0.845rem;
+}
+
+.slider-container input {
+  grid-area: input;
+}
+
+.price-container {
+  grid-area: price;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  font-size: 0.875rem;
+}
+
 .price {
   color: var(--dark-desaturated-blue);
+  font-size: 2.3rem;
+  font-weight: var(--fw-800);
+}
+
+.toggle-switch-container {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.discount {
+  color: #e99c86;
+  background-color: #fcecea;
+  border-radius: 200px;
+  padding: 3px 6px;
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: var(--fw-800);
+  margin-inline-start: 0.3rem;
+}
+
+form ul {
+  margin-top: 2.5rem;
+  padding-top: 1.8rem;
+  position: relative;
+  display: grid;
+  gap: 0.5rem;
+}
+
+form ul::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: calc(100% + (1.5rem * 2));
+  transform: translateX(-1.5rem);
+  height: 2px;
+  background-color: #f7f6f8;
+}
+
+form ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.8rem;
+}
+
+form button {
+  background-color: var(--dark-desaturated-blue);
+  color: var(--pale-blue);
+  padding: 0.8rem 2.8rem;
+  font-size: 0.8rem;
+  font-weight: var(--fw-800);
+  border-radius: 200px;
+  margin-top: 1.8rem;
 }
 
 /* ### SLIDER ### */
@@ -158,7 +270,7 @@ body {
 .switch {
   position: relative;
   display: inline-block;
-  width: 50px;
+  width: 45px;
   height: 25px;
 }
 
@@ -203,9 +315,9 @@ input:focus + .slider-switch {
 }
 
 input:checked + .slider-switch:before {
-  -webkit-transform: translateX(25px);
-  -ms-transform: translateX(25px);
-  transform: translateX(25px);
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
 }
 
 /* Rounded sliders */
